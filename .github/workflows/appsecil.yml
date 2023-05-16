@@ -7,7 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Hello World
     steps:
-      - run: 
-            id
-            uname -a 
-            echo "Hallo World AppSec IL 2023"
+      - run: id
+      - run : echo "Hallo World AppSec IL 2023"
+      - name: ZAP Scan
+        uses: zaproxy/action-full-scan@v0.4.0
+        with:
+          target: 'https://juice-shop.herokuapp.com'
