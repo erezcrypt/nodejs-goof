@@ -6,6 +6,8 @@ jobs:
   appsecil:
     runs-on: ubuntu-latest
     name: Hello World
+    permissions: 
+      issues: write
     steps:
       - run: id
       - run : echo "Hallo World AppSec IL 2023"
