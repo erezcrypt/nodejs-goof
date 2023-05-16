@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     name: Hello World
     steps:
-        -run: echo "Hallo World AppSec IL 2023"
+      - run: echo "Hallo World AppSec IL 2023"
